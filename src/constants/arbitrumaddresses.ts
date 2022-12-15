@@ -1,3 +1,5 @@
+//Finito
+
 export interface IToken {
   symbol: string;
   name: string;
@@ -121,4 +123,23 @@ export const ERC20Token: erc20Token = {
     logoURI:
       "https://tokens.1inch.io/0x580a84c73811e1839f75d86d75d88cca0c241ff4.png",
   },
+};
+
+type PoolMap = { [pair: string]: string };
+
+export const dodoV2Pool: PoolMap = {
+  WETH_USDC: "0x5333Eb1E32522F1893B7C9feA3c263807A02d561",
+  WMATIC_USDC: "0x10Dd6d8A29D489BEDE472CC1b22dc695c144c5c7",
+};
+
+type RouterMap = { [protocol: string]: string };
+
+export const uniswapRouter: RouterMap = {
+  POLYGON_UNISWAP_V3: "0xE592427A0AEce92De3Edee1F18E0157C05861564",
+  POLYGON_SUSHISWAP: "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
+  POLYGON_QUICKSWAP: "0xa5E0829CaCEd8fFDD4De3c43696c57F7D7A678ff",
+  POLYGON_APESWAP: "0xC0788A3aD43d79aa53B09c2EaCc313A787d1d607",
+  POLYGON_JETSWAP: "0x5C6EC38fb0e2609672BDf628B1fD605A523E5923",
+  POLYGON_POLYCAT: "0x94930a328162957FF1dd48900aF67B5439336cBD",
+  POLYGON_WAULTSWAP: "0x3a1D87f206D12415f5b0A33E786967680AAb4f6d",
 };
